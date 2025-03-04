@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.cell {
+    font-family: 'Kanit', serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell img {
+    width: 80%;
+    height: 80%;
+}
+
+.closedOdd {
+    background-color: #a0cf48;
+}
+
+.closedEven {
+    background-color: #a8d450;
+}
+
+.openedOdd {
+    background-color: #d4b697;
+}
+
+.openedEven {
+    background-color: #e2c09d;
+}
+
+.cell p[data-value='1'] {
+    color: #041afa;
+}
+
+.cell p[data-value='2'] {
+    color: #017d07;
+}
+
+.cell p[data-value='3'] {
+    color: #fb0302;
+}
+
+.cell p[data-value='4'] {
+    color: #00047c;
+}
+
+.cell p[data-value='5'] {
+    color: #7e0101;
+}
+
+.cell p[data-value='6'] {
+    color: #047f7f;
+}
+
+.cell p[data-value='7'] {
+    color: #040405;
+}
+
+.cell p[data-value='8'] {
+    color: #7e7e7e;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .cell {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .cell {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 420px) {
+    .cell {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 320px) {
+    .cell {
+        width: 18px;
+        height: 18px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,142 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    font-size: 30px;
+}
+
+.active {
+    transform: scale(1);
+}
+
+.modalContent {
+    width: 60%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.exitImage {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.settingsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.settingsList p {
+    grid-column: 1/5;
+    justify-self: center;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-self: center;
+}
+
+.setting img {
+    width: 75px;
+    height: 75px;
+}
+
+.modalContent button {
+    font-size: 30px;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .modal {
+        font-size: 24px;
+    }
+
+    .exitImage {
+        width: 40px;
+        height: 40px;
+    }
+
+    .setting img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .modalContent button {
+        font-size: 24px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .modal {
+        font-size: 18px;
+    }
+
+    .modalContent {
+        width: 60%;
+    }
+
+    .setting img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .modalContent button {
+        font-size: 18px;
+        width: 140px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+    .exitImage {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .exitImage {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 320px) {
+    .settingsList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .settingsList p,
+    .settingsList .bombInfo{
+        grid-column: 1/3;
+        justify-self: center;
+    }
+}
+

@@ -1,0 +1,16 @@
+.board {
+    width: fit-content;
+    max-height: 800px;
+    margin: auto;
+    border: 1px solid #9ecd47;
+    user-select: none;
+}
+
+.cellColumn {
+    display: flex;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
